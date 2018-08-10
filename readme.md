@@ -16,14 +16,14 @@ Front-end application hosted on http at present.
 ## To Do
 
 - Home 
- - optimise image loading
- - add scroll to
- - home drop down for submenus
- - slide show
-    - make image loop through rather than go back to the beginning.
-    - dots must also update position.
-    - stop auto slide when, selecting next or prev. 
-    - make slide info responsive
+  - optimise image loading
+  - add scroll to
+  - home drop down for submenus
+  - slide show
+     - make image loop through rather than go back to the beginning.
+     - dots must also update position.
+     - stop auto slide when, selecting next or prev. 
+     - make slide info responsive
 
 - News 
   - Individual post page.
@@ -32,11 +32,11 @@ Front-end application hosted on http at present.
   - Change magnifine glass OR add zoom
 
 - Profile
- - add loader to page
- - team services needs to be hooked up to api.
+  - add loader to page
+  - team services needs to be hooked up to api.
 
 - Contact us 
-  - add email svg from old site.
+   - add email svg from old site.
 
 
 ## Install
