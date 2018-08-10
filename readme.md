@@ -1,18 +1,43 @@
-# preact-starter
+## Harston-preact - [harstonandco](http://ordinary-sack.surge.sh/)
 
-> Webpack3 boilerplate for building SPA / PWA / offline front-end apps with :atom_symbol: [Preact](https://github.com/developit/preact)
+Front-end application hosted on http at present.  
 
-Using `preact-starter` will kickstart your next application! :100: It is designed to fit the "90% use-case" for those who want to build offline-first web apps (see [features](#features) below).
+- Preact
+- Bootstrap theme
+- Wordpress rest api 4.9.8
+- Sass
 
-> :triangular_flag_on_post: **Important:** This is meant for _client-side_ apps only; there is **no support** included for universal / server-side rendering. I plan to release my own SSR kit shortly!
+## Word Press Api  -[harston-api](http://harston-api.esy.es/wp-admin/index.php)
 
-**Please note:** Boilerplate _does not_ incorporate the latest ["css-in-js" or "css modules" technique](https://github.com/MicheleBertoli/css-in-js). Instead, the more traditional approach is taken, wherein `styles` and `scripts` are kept separate. That said, you may **certainly and easily** take that route if desired. :white_check_mark:
+  This website is using word press rest api.  To edit please go to the admin dashboard and enter the details you wish to edit. Each page is editable. You can also add/edit posts, these are separated into news, reviews, and team to allow more flexibility.  Its important you add the category of post you wish to add as this will determine which fields have been allocated to the category. 
+   Images are also editable but you must keep the sizes in-order for them to look right within the theme. The word press admin area allows you to do this but can be a little unresponsive when it comes to cropping but it does work. 
+  The style and layout of the site is separated from the content, and will need to be coded in-order to change. 
+ 
+## To Do
 
----
+- Home 
+ - optimise image loading
+ - add scroll to
+ - home drop down for submenus
+ - slide show
+    - make image loop through rather than go back to the beginning.
+    - dots must also update position.
+    - stop auto slide when, selecting next or prev. 
+    - make slide info responsive
 
-<p align="center">:warning: Boilerplate & commands will evolve as my own development process does. :warning:</p>
+- News 
+  - Individual post page.
+  - Remove search.
+  - Hookup categories and tags
+  - Change magnifine glass OR add zoom
 
----
+- Profile
+ - add loader to page
+ - team services needs to be hooked up to api.
+
+- Contact us 
+  - add email svg from old site.
+
 
 ## Install
 
