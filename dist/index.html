@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title>Harston</title>
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no, minimal-ui">
+
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="application-name" content="Preact Starter">
+
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-title" content="Preact Starter">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="180x180" href="/icon/apple-touch-icon.png">
+    <link rel="manifest" href="/manifest.json">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- Style CSS -->
+<!--     <link href="css/style.css" rel="stylesheet"> -->
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css?family=Muli:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
+    <!-- FontAwesome CSS -->
+    <link rel="stylesheet" type="text/css" href="css/fontello.css">
+    <link href="css/font-awesome.min.css" rel="stylesheet">
+
+   <!--  <link href="css/owl.carousel.css" rel="stylesheet">
+    <link href="css/owl.theme.default.css" rel="stylesheet"> -->
+ 
+    <meta name="msapplication-tap-highlight" content="no">
+    <meta name="msapplication-TileImage" content="/icon/ms-touch-icon-144x144-precomposed.png">
+    <meta name="msapplication-TileColor" content="#F2F2F2">
+
+    <meta name="theme-color" content="#673AB8">
+  <link href="/styles.573c585ffd75db7ae185.css" rel="stylesheet"></head>
+  <body>
+    <div id="root"></div>
+    <script src="js/jquery.min.js" type="text/javascript"></script>
+    <script src="js/bootstrap.min.js" type="text/javascript"></script>
+    <script src="js/menumaker.js" type="text/javascript"></script>
+    <script src="js/navigation.js" type="text/javascript"></script>  
+    <script type="text/javascript">
+    $("#navigation li").on("click", function (t) {
+        console.log(this)
+      t.preventDefault();
+      var e = this.hash;
+      $("html, body").animate({
+        scrollTop: $(e).offset().top
+      }, 800, function () {
+        window.location.hash = e
+      })
+    })
+    </script>  
+ 
+  <script type="text/javascript" src="/vendor.573c585ffd75db7ae185.js"></script><script type="text/javascript" src="/app.573c585ffd75db7ae185.js"></script></body>
+</html>

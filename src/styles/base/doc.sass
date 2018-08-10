@@ -1,0 +1,2869 @@
+/**
+ * Global document styles
+ */
+
+
+
+//@extend-elements
+//original selectors
+//h1, h2, h3, h4, h5, h6
+.extend_1 
+	color: $color_log_cabin_approx
+	margin: 0 0 15px 0
+	font-weight: 700
+	text-transform: capitalize
+
+
+//original selectors
+//ul, ol
+.extend_2 
+	list-style: none
+	margin: 0
+	padding: 0
+
+
+//original selectors
+//input[type=checkbox], input[type=radio]
+.extend_3 
+	margin: 8px 0 0
+	margin-top: 1px\9
+	line-height: normal
+
+
+//original selectors
+//.imghover::before, .imghover::after
+.extend_4 
+	display: block
+	position: absolute
+	content: ""
+	text-align: center
+	opacity: 0
+
+
+//original selectors
+//#navigation, #navigation ul, #navigation ul li, #navigation ul li a, #navigation #menu-button
+.extend_5 
+	margin: 0
+	padding: 0
+	border: 0
+	list-style: none
+	line-height: 1
+	display: block
+	position: relative
+	//If you use compass, instead of the line below you could use + box-sizing($bs)
+	box-sizing: border-box
+
+//original selectors
+//#navigation:after, #navigation >ul:after
+.extend_6 
+	content: "."
+	display: block
+	clear: both
+	visibility: hidden
+	line-height: 0
+	height: 0
+
+
+//original selectors
+//#navigation.small-screen ul li a, #navigation.small-screen ul ul li a
+.extend_7 
+	width: 100%
+	border-bottom: 0
+	padding: 20px 15px
+	color: $white
+
+
+//original selectors
+//#navigation.small-screen ul ul, #navigation.small-screen ul ul ul, #navigation.small-screen.align-right ul ul
+.extend_8 
+	position: relative
+	left: 0
+	width: 100%
+	margin: 0
+	text-align: left
+
+
+//original selectors
+//.table >tbody >tr >td, .table >tbody >tr >th, .table >tfoot >tr >td, .table >tfoot >tr >th, .table >thead >tr >td, .table >thead >tr >th
+.extend_9 
+	padding: 18px 24px
+	line-height: 1.42857143
+	vertical-align: middle
+	border-top: 1px solid $color_alto_approx
+	border-bottom: 1px solid $color_alto_approx
+	font-size: 13px
+	text-transform: uppercase
+	letter-spacing: .50px
+	font-weight: 800
+	color: $color_tapa_approx
+
+
+//original selectors
+//.team-area ul li, .property-features ul li
+.extend_10 
+	border-bottom: 1px solid $color_gray_nurse_approx
+	padding-left: 24px
+	line-height: 52px
+	letter-spacing: 1px
+	text-transform: uppercase
+	font-size: 12px
+	font-weight: 800
+	color: $color_log_cabin_approx
+
+
+//original selectors
+//.appointment-form-title, .contact-title
+.extend_11 
+	letter-spacing: 2
+	text-transform: uppercase
+	font-weight: 800
+
+
+//original selectors
+//.meta-admin, .meta-comments, .meta-categories
+.extend_12 
+	color: $color_mountain_mist_approx
+	margin-right: 10px
+	margin-left: 10px
+
+
+//original selectors
+//.st-pagination .pagination >li >a, .pagination >li >span
+.extend_13 
+	position: relative
+	float: left
+	line-height: 1.8
+	color: $white
+	letter-spacing: 2px
+	text-decoration: none
+	font-size: 12px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 2px
+	border: 1px solid $color_gray_approx
+	background-color: $color_gray_approx
+	font-weight: 800
+	text-transform: uppercase
+	margin-right: 8px
+	margin-bottom: 5px
+
+
+//original selectors
+//.st-pagination .pagination >li >a:focus, .st-pagination .pagination >li >a:hover, .st-pagination .pagination >li >span:focus, .st-pagination .pagination >li >span:hover
+.extend_14 
+	z-index: 2
+	color: $white
+	background-color: $color_primary
+	border: $color_primary 1px solid
+
+
+//original selectors
+//.st-pagination .pagination >.active >a, .st-pagination .pagination >.active >a:focus, .st-pagination .pagination >.active >a:hover, .st-pagination .pagination >.active >span, .st-pagination .pagination >.active >span:focus, .st-pagination .pagination >.active >span:hover
+.extend_15 
+	z-index: 3
+	color: $white
+	cursor: default
+	background-color: $color_primary
+	border: 1px solid $color_primary
+
+
+
+body 
+	text-rendering: optimizeLegibility
+	font-family: $font_0, $font_1
+	letter-spacing: 0
+	font-size: 16px
+	color: $color_tapa_approx
+	font-weight: 600
+	line-height: 26px
+
+h1 
+	@extend .extend_1
+	font-size: 32px
+	line-height: 46px
+
+h2 
+	@extend .extend_1
+	font-size: 30px
+	line-height: 36px
+
+h3 
+	@extend .extend_1
+	font-size: 24px
+	line-height: 32px
+
+h4 
+	@extend .extend_1
+	font-size: 20px
+	line-height: 26px
+
+h5 
+	@extend .extend_1
+	font-size: 18px
+	line-height: 28px
+
+h6 
+	@extend .extend_1
+	font-size: 12px
+
+p 
+	margin: 0 0 24px
+	line-height: 1.6
+	&:last-child 
+		margin: 0
+
+
+ul 
+	@extend .extend_2
+
+ol 
+	@extend .extend_2
+
+a 
+	text-decoration: none
+	color: $color_log_cabin_approx
+	//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.3s
+	&:focus 
+		text-decoration: none
+		color: $color_primary
+
+	&:hover 
+		text-decoration: none
+		color: $color_primary
+
+	img 
+		&.alignright 
+			float: right
+			margin: 0 0 30px 30px
+
+		&.alignnone 
+			margin: 5px 20px 20px 0
+
+		&.alignleft 
+			float: left
+			margin: 5px 20px 20px 0
+
+		&.aligncenter 
+			display: block
+			margin-left: auto
+			margin-right: auto
+
+
+
+sub 
+	bottom: 0
+
+.lead 
+	font-size: 22px
+	font-weight: 600
+	line-height: 1.6
+	font-family: $font_0, $font_1
+	color: $color_log_cabin_approx
+	margin-bottom: 20px
+
+.blockquote 
+	padding: 40px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 0
+	background-color: $seashell
+	border-left: 5px solid $color_primary
+
+.qoute-icon 
+	font-size: 42px
+	color: $color_lochmara_approx
+	margin-bottom: 20px
+
+.blockquote-content 
+	font-family: $font_0, $font_1
+	color: $color_primary
+	font-weight: 600
+	font-size: 30px
+	text-transform: uppercase
+	p 
+		line-height: 1.4
+
+
+.blocquote-author 
+	font-weight: 600
+	font-size: 13px
+	text-transform: capitalize
+	font-style: normal
+	color: $color_tapa_approx
+
+strong 
+	color: $color_mine_shaft_approx
+	font-weight: 600
+	margin-right: 8px
+
+hr 
+	border-bottom: 1px solid $color_gray_nurse_approx
+	margin-bottom: 40px
+	margin-top: 40px
+
+label 
+
+.control-label 
+	font-size: 13px
+	text-transform: capitalize
+	color: $color_bright_gray_approx
+	margin-bottom: 20px
+	text-transform: uppercase
+	letter-spacing: 1px
+
+.form-control 
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 2px
+	color: $color_bright_gray_approx
+	font-size: 12px
+	font-weight: 800
+	width: 100%
+	height: 52px
+	padding: 14px
+	line-height: 1.42857143
+	border: 1px solid $color_cararra_approx
+	background-color: $color_cararra_approx
+	letter-spacing: 1px
+	text-transform: uppercase
+	margin-bottom: 20px
+	//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 0 0 $black_7_5
+	&:focus 
+
+
+.required 
+
+.form-group 
+	margin-bottom: 5px
+
+.input-group 
+	position: relative
+	display: table
+	border-collapse: separate
+
+input[type=checkbox] 
+	@extend .extend_3
+
+input[type=radio] 
+	@extend .extend_3
+
+input::-webkit-input-placeholder 
+	color: $color_bright_gray_approx !important
+
+textarea::-webkit-input-placeholder 
+	color: $color_bright_gray_approx !important
+
+.input-group-addon 
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 0
+	background-color: $color_concrete_approx
+
+.focus 
+	border: 1px solid $color_celeste_approx
+	background-color: $color_cararra_approx
+	//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 1px 1px $black_7_5
+
+select 
+	color: $color_bright_gray_approx
+
+.alignnone 
+	margin: 5px 20px 20px 0
+
+.aligncenter 
+	display: block
+	margin: 5px auto 5px auto
+
+.alignright 
+	float: right
+	margin: 0 0 20px 30px
+
+.alignleft 
+	float: left
+	margin: 0 20px 0 0
+
+.wp-caption 
+	background: $white
+	border: 1px solid $color_gallery_approx
+	max-width: 96%
+	padding: 5px 3px 10px
+	text-align: center
+	&.alignnone 
+		margin: 5px 20px 20px 0
+
+	&.alignleft 
+		margin: 5px 20px 20px 0
+
+	&.alignright 
+		margin: 5px 0 20px 20px
+
+	img 
+		border: 0 none
+		height: auto
+		margin: 0
+		max-width: 98.5%
+		padding: 0
+		width: auto
+
+	p.wp-caption-text 
+		font-size: 11px
+		line-height: 17px
+		margin: 0
+		padding: 0 4px 5px
+
+
+.btn 
+	font-family: $font_0, $font_1
+	font-size: 15px
+	text-transform: uppercase
+	font-weight: 800
+	padding: 18px 30px
+	margin-bottom: 4px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 5px
+	line-height: 1.8
+	letter-spacing: 2px
+	border: transparent
+	//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.3s
+	word-wrap: break-word
+	white-space: normal !important
+
+.btn-primary 
+	background-color: $color_primary
+	color: $white
+	&:hover 
+		background-color: $color_primary
+		color: $white
+
+	&.focus 
+		background-color: $color_primary
+		color: $white
+
+	&:focus 
+		background-color: $color_primary
+		color: $white
+
+
+.btn-default 
+	background-color: $color_log_cabin_approx
+	color: $white
+	&:hover 
+		background-color: $color_woodsmoke_approx
+		color: $white
+
+	&.focus 
+		background-color: $color_woodsmoke_approx
+		color: $white
+
+	&:focus 
+		background-color: $color_woodsmoke_approx
+		color: $white
+
+
+.btn-lg 
+	padding: 22px 45px
+	font-size: 16px
+
+.btn-sm 
+	padding: 14px 30px
+	font-size: 14px
+
+.btn-xs 
+	padding: 12px 22px
+	font-size: 12px
+
+.btn-white 
+	color: $color_catalina_blue_approx
+	background: $white
+	margin-bottom: -10px
+	&:hover 
+		background-color: $white
+		color: $color_catalina_blue_approx
+
+	&.focus 
+		background-color: $white
+		color: $color_catalina_blue_approx
+
+	&:focus 
+		background-color: $white
+		color: $color_catalina_blue_approx
+
+
+.btn-link 
+	color: $color_primary
+	font-size: 14px
+	font-weight: 700
+	letter-spacing: 1.5px
+	text-transform: uppercase
+	//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+	transition: all 0.3s
+	&:hover 
+		color: $color_primary
+		text-decoration: none
+
+
+.space-small 
+	padding-top: 40px
+	padding-bottom: 40px
+
+.space-medium 
+	padding-top: 80px
+	padding-bottom: 80px
+
+.space-large 
+	padding-top: 120px
+	padding-bottom: 120px
+
+.space-ex-large 
+	padding-top: 140px
+	padding-bottom: 140px
+
+.ml15 
+	margin-left: 15px
+
+.mr10 
+	margin-right: 10px
+
+.mb0 
+	margin-bottom: 0
+
+.mb10 
+	margin-bottom: 10px
+
+.mb20 
+	margin-bottom: 20px
+
+.mb30 
+	margin-bottom: 30px
+
+.mb35 
+	margin-bottom: 35px
+
+.mb40 
+	margin-bottom: 40px
+
+.mb60 
+	margin-bottom: 60px
+
+.mb80 
+	margin-bottom: 80px
+
+.mb100 
+	margin-bottom: 100px
+
+.mb130 
+	margin-bottom: 130px
+
+.mt0 
+	margin-top: 0
+
+.mt10 
+	margin-top: 10px
+
+.mt20 
+	margin-top: 20px
+
+.mt30 
+	margin-top: 30px
+
+.mt40 
+	margin-top: 40px
+
+.mt60 
+	margin-top: 60px
+
+.mt70 
+	margin-top: 70px
+
+.mt80 
+	margin-top: 80px
+
+.mt100 
+	margin-top: 100px
+
+.mt-20 
+	margin-top: -20px
+
+.mt-40 
+	margin-top: -40px
+
+.mt-60 
+	margin-top: -60px
+
+.mt-80 
+	margin-top: -80px
+
+.nopadding 
+	padding: 0
+
+.nopr 
+	padding-right: 0
+
+.nopl 
+	padding-left: 0
+
+.pinside10 
+	padding: 10px
+
+.pinside20 
+	padding: 20px
+
+.pinside30 
+	padding: 30px
+
+.pinside40 
+	padding: 40px
+
+.pinside50 
+	padding: 50px
+
+.pinside60 
+	padding: 60px
+
+.pinside80 
+	padding: 80px
+
+.pinside130 
+	padding: 130px
+
+.pdt10 
+	padding-top: 10px
+
+.pdt20 
+	padding-top: 20px
+
+.pdt30 
+	padding-top: 30px
+
+.pdt40 
+	padding-top: 40px
+
+.pdt60 
+	padding-top: 60px
+
+.pdt80 
+	padding-top: 80px
+
+.pdb10 
+	padding-bottom: 10px
+
+.pdb20 
+	padding-bottom: 20px
+
+.pdb30 
+	padding-bottom: 30px
+
+.pdb40 
+	padding-bottom: 40px
+
+.pdb60 
+	padding-bottom: 60px
+
+.pdb80 
+	padding-bottom: 80px
+
+.pdb150 
+	padding-bottom: 150px
+
+.pdl10 
+	padding-left: 10px
+
+.pdl20 
+	padding-left: 20px
+
+.pdl30 
+	padding-left: 30px
+
+.pdl40 
+	padding-left: 40px
+
+.pdl60 
+	padding-left: 60px
+
+.pdl80 
+	padding-left: 80px
+
+.pdr10 
+	padding-right: 10px
+
+.pdr20 
+	padding-right: 20px
+
+.pdr30 
+	padding-right: 30px
+
+.pdr40 
+	padding-right: 40px
+
+.pdr60 
+	padding-right: 60px
+
+.pdr80 
+	padding-right: 80px
+
+.pdtb40 
+	padding-bottom: 40px
+	padding-top: 40px
+
+.content 
+	padding-top: 100px
+	padding-bottom: 100px
+
+.bg-light 
+	background-color: $color_black_haze_approx
+
+.bg-primary 
+	background-color: $color_primary
+	color: $white
+
+.bg-default 
+	background-color: $color_log_cabin_approx
+	color: $white
+
+.bg-white 
+	background-color: $white
+
+.outline 
+
+.section-title 
+	margin-bottom: 40px
+	text-align: center
+
+.title 
+	color: $color_mine_shaft_approx
+
+.small-title 
+	margin-bottom: 10px
+	font-size: 12px
+	font-weight: 900
+	color: $color_primary
+	text-transform: uppercase
+	letter-spacing: 1px
+	display: inline-block
+
+.text-white 
+	color: $white
+
+.text-primary 
+	color: $color_primary
+
+.text-black 
+	color: $color_log_cabin_approx
+
+.primary-sidebar 
+
+.secondary-sidebar 
+
+.well-block 
+
+.divider-line 
+	border-bottom: 1px solid $color_gray_nurse_approx
+	margin-top: 40px
+	margin-bottom: 40px
+
+.features-section 
+
+.feature 
+
+.feature-icon 
+
+.feature-content 
+
+.feature-inner 
+
+.feature-outline 
+
+.feature-left 
+	.feature-icon 
+
+	.feature-content 
+
+
+.feature-center 
+	.feature-content 
+
+	.feature-icon.feature-circle:hover 
+
+
+.angle 
+	position: relative
+
+.arrow 
+	position: relative
+
+.map-icon 
+	position: relative
+
+.cta-wrapper 
+	background-color: $color_secondary
+	padding-top: 60px
+	padding-bottom: 60px
+	text-align: center
+	color: $white
+
+.cta-title 
+	font-size: 44px
+	color: $white
+
+img 
+	width: auto
+	max-width: 100%
+	height: auto
+	margin: 0
+	padding: 0
+	border: none
+	line-height: normal
+	vertical-align: middle
+
+.imghover 
+	display: block
+	position: relative
+	max-width: 100%
+	&:hover::before 
+		opacity: 1
+		background: $color_log_cabin_60_approx
+
+	&:hover::after 
+		opacity: 1
+		color: $white
+
+
+.imghover::before 
+	@extend .extend_4
+	top: 0
+	right: 0
+	bottom: 0
+	left: 0
+
+.imghover::after 
+	@extend .extend_4
+	top: 55%
+	left: 50%
+	padding: 10px
+	line-height: 10px
+	margin: -25px 0 0 -25px
+	content: "\f00e"
+	font-family: $font_2
+	font-size: 30px
+
+.icon 
+
+.icon-1x 
+	font-size: 18px
+
+.icon-2x 
+	font-size: 38px
+
+.icon-4x 
+	font-size: 65px
+
+.icon-6x 
+	font-size: 88px
+
+.icon-8x 
+	font-size: 108px
+
+.icon-default 
+	color: $color_log_cabin_approx
+
+.icon-primary 
+	color: $color_primary
+
+.icon-secondary 
+	color: $color_tapa_approx
+
+.icon-white 
+	color: $white
+
+.top-bar 
+	padding-top: 10px
+	padding-bottom: 36px
+	ul li 
+		float: left
+
+
+.top-text 
+	color: $color_dark_grey
+	font-size: 14px
+	font-weight: 700
+	padding-top: 3px
+
+.top-bar-icon 
+	font-size: 15px
+	color: $color_primary
+	padding-right: 8px
+	padding-top: 3px
+
+.social-icon 
+	padding-left: 50px
+
+.btn-twitter 
+	background: $color_cerulean_approx
+	color: $white
+	&:hover 
+		background: $color_deep_cerulean_approx
+		color: $white
+
+	&:active 
+		background: $color_deep_cerulean_approx
+		color: $white
+
+
+.btn-facebook 
+	background: $color_azure_approx
+	color: $white
+	&:hover 
+		background: $color_astronaut_approx
+		color: $white
+
+	&:active 
+		background: $color_astronaut_approx
+		color: $white
+
+
+.btn-googleplus 
+	background: $color_valencia_approx
+	color: $white
+	&:hover 
+		background: $color_tall_poppy_approx
+		color: $white
+
+	&:active 
+		background: $color_tall_poppy_approx
+		color: $white
+
+
+.btn-instagram 
+	background: $color_primary
+	color: $white
+	&:hover 
+		background: $color_amaranth_approx
+		color: $white
+
+	&:active 
+		background: $color_amaranth_approx
+		color: $white
+
+
+.btn-linkedin 
+	background: $color_allports_approx
+	color: $white
+	&:hover 
+		background: $color_orient_approx
+		color: $white
+
+	&:active 
+		background: $color_orient_approx
+		color: $white
+
+
+.btn-social 
+	font-size: 10px
+	padding: 9px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 100%
+	display: inline-block
+	width: 28px
+	height: 28px
+	line-height: 1px
+
+.header-collapse 
+	background-color: $white
+	border-bottom: 1px solid $color_mercury_approx
+	.top-text 
+		color: $color_mine_shaft_approx
+
+	.top-bar 
+		padding-top: 10px
+		padding-bottom: 34px
+		border-bottom: 1px solid $color_mercury_approx
+
+
+.header-wrapper 
+
+.register-links 
+	padding-left: 30px
+	ul 
+		margin-top: 7px
+		li 
+			float: left
+			a 
+				text-transform: uppercase
+				font-size: 11px
+				font-weight: 800
+				letter-spacing: 1px
+
+
+
+
+.navigation 
+	background-color: $white
+	padding-top: 28px
+	padding-bottom: 68px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 2px
+
+#navigation 
+	float: right
+	font-family: $font_0, $font_1
+	text-rendering: optimizeLegibility
+	@extend .extend_5
+	ul 
+		@extend .extend_5
+		li 
+			@extend .extend_5
+			a 
+				@extend .extend_5
+
+
+		ul 
+			position: absolute
+			left: -9999px
+			li 
+				top: 0
+				height: 0
+				//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+				transition: all .25s ease
+				a 
+					background-color: $color_primary
+					padding: 16px 22px
+					width: 218px
+					font-size: 13px
+					text-decoration: none
+					color: $white
+					font-weight: 800
+					text-transform: uppercase
+					border-bottom: $color_primary 1px solid
+					letter-spacing: 1px
+					&:hover 
+						color: $white
+						background-color: $color_primary
+
+
+				&:first-child > a 
+					//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+					border-top-right-radius: 2%
+
+				&:last-child > a 
+					//If you use compass, instead of the line below you could use + border-bottom-right-radius($radius)
+					border-bottom-right-radius: 2%px
+					//If you use compass, instead of the line below you could use + border-bottom-left-radius($radius)
+					border-bottom-left-radius: 2%px
+					border-bottom: 0
+
+				&.last-item > a 
+					border-bottom: 0
+
+				&:hover > a 
+					color: $white
+					background-color: $color_primary
+
+				&.has-sub > a 
+					&:after 
+						position: absolute
+						top: 16px
+						right: 11px
+						width: 8px
+						height: 2px
+						display: block
+						background: $color_alto_approx
+						content: ''
+
+					&:before 
+						position: absolute
+						top: 13px
+						right: 14px
+						display: block
+						width: 2px
+						height: 8px
+						background: $color_alto_approx
+						content: ''
+						//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+						transition: all .25s ease
+
+
+
+			ul 
+				margin-left: 100%
+				top: 0
+
+			> li.has-sub:hover > a:before 
+				top: 17px
+				height: 0
+
+
+
+	#menu-button 
+		@extend .extend_5
+		display: none
+
+	&:after 
+		@extend .extend_6
+
+	> ul 
+		&:after 
+			@extend .extend_6
+
+		> li 
+			float: left
+			> a 
+				padding: 16px 18px
+				font-size: 13px
+				color: $color_tuatara_approx
+				letter-spacing: 1px
+				text-decoration: none
+				font-weight: 800
+				text-transform: uppercase
+
+			&:hover > a 
+				color: $white
+				background-color: $color_primary
+				//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+				border-radius: 2%
+
+			&.has-sub > a 
+				padding-right: 32px
+				&:before 
+					position: absolute
+					right: 14px
+					font-family: $font_2
+					content: "\f107"
+					//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: all .25s ease
+
+
+
+
+	&.align-center 
+		> ul 
+			font-size: 0
+			text-align: center
+			> li 
+				display: inline-block
+				float: none
+
+
+		ul ul 
+			text-align: left
+
+
+	&.align-right 
+		> ul > li 
+			float: right
+
+		ul ul 
+			text-align: right
+			ul 
+				margin-left: 0
+				margin-right: 100%
+
+			li.has-sub > a 
+				&:after 
+					right: auto
+					left: 11px
+
+				&:before 
+					right: auto
+					left: 14px
+
+
+
+		li:hover > ul 
+			left: auto
+			right: 0
+
+
+	&.small-screen 
+		width: 100%
+		ul 
+			width: 100%
+			display: none
+			li 
+				width: 100%
+				border-top: 1px solid $color_primary
+				top: auto
+				background-color: $color_primary
+				a 
+					@extend .extend_7
+
+
+			ul 
+				@extend .extend_8
+				li 
+					height: auto
+					a 
+						@extend .extend_7
+						padding-left: 25px
+						color: $white
+						background: $color_primary
+
+					&:hover > a 
+						color: $white
+						background-color: $color_primary
+
+					&.active > a 
+						color: $white
+						background-color: $color_primary
+
+
+				ul 
+					@extend .extend_8
+					li a 
+						padding-left: 35px
+
+
+				.submenu-button 
+					height: 34px
+					width: 34px
+					&:after 
+						top: 15px
+						right: 13px
+
+					&:before 
+						top: 12px
+						right: 16px
+
+
+				> li.has-sub > a 
+					&:after 
+						display: none
+
+					&:before 
+						display: none
+
+
+
+
+		#menu-button 
+			display: block
+			padding: 18px
+			color: $white
+			cursor: pointer
+			font-size: 12px
+			text-transform: uppercase
+			font-weight: 600
+			background-color: $color_primary
+			margin-top: 15px
+			&:after 
+				position: absolute
+				top: 16px
+				right: 17px
+				display: block
+				height: 12px
+				width: 20px
+				border-top: 2px solid $white
+				border-bottom: 2px solid $white
+				content: ''
+
+			&:before 
+				position: absolute
+				top: 21px
+				right: 17px
+				display: block
+				height: 2px
+				width: 20px
+				background: $white
+				content: ''
+
+			&.menu-opened 
+				&:after 
+					top: 22px
+					border: 0
+					height: 2px
+					width: 12px
+					background: $white
+					//If you use compass, instead of the line below you could use + transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+					transform: rotate(45deg)
+
+				&:before 
+					top: 22px
+					background: $white
+					width: 12px
+					//If you use compass, instead of the line below you could use + transform($scale, $rotate, $transx, $transy, $skewx, $skewy, $originx, $originy)
+					transform: rotate(-45deg)
+
+
+
+		.submenu-button 
+			position: absolute
+			z-index: 99
+			right: 0
+			top: 0
+			display: block
+			border-left: 1px solid $color_primary
+			height: 54px
+			width: 53px
+			cursor: pointer
+			&.submenu-opened 
+				&:after 
+					background: 
+
+				&:before 
+					display: none
+
+
+			&:after 
+				position: absolute
+				top: 25px
+				right: 20px
+				width: 8px
+				height: 2px
+				display: block
+				background: $white
+				content: ''
+
+			&:before 
+				position: absolute
+				top: 22px
+				right: 23px
+				display: block
+				width: 2px
+				height: 8px
+				background: $white
+				content: ''
+
+
+		&.select-list 
+			padding: 5px
+
+		&.align-center > ul 
+			text-align: left
+
+		li:hover > ul > li 
+			height: auto
+
+		> ul > li 
+			float: none
+			> a:after 
+				position: absolute
+				top: 16px
+				right: -3px
+				height: 2px
+				display: block
+				content: ''
+
+			&.has-sub > a 
+				&:after 
+					display: none
+
+				&:before 
+					display: none
+
+
+
+		&.align-right ul ul 
+			@extend .extend_8
+
+
+	li:hover > ul 
+		left: auto
+		> li 
+			height: 46px
+
+
+
+.page-header 
+	background: $url_0 no-repeat
+	background-size: cover
+	margin: 0
+	padding: 0
+	border: 0
+	position: relative
+
+.page-section 
+	padding-top: 320px
+	padding-bottom: 60px
+
+.page-title 
+	color: $white
+	font-size: 50px
+	border-bottom: 2px solid $color_silver_chalice_approx
+	padding-bottom: 20px
+	display: inline-block
+	font-weight: 700
+
+.page-breadcrumb 
+	color: $color_santas_gray_approx
+	position: absolute
+	top: 340px
+	left: 150px
+	.breadcrumb 
+		background-color: transparent
+		padding: 5px 0
+		margin-bottom: 6px
+		font-size: 12px
+		font-weight: 800
+		border: none
+		letter-spacing: 0.5px
+		text-transform: uppercase
+		color: $color_pumice_approx
+
+
+.slider 
+	margin-bottom: -40px
+	.owl-theme 
+		.owl-dots 
+			text-align: center !important
+			position: relative
+			bottom: 50px
+			.owl-dot 
+				display: inline-block
+				zoom: 1
+				span 
+					width: 10px
+					height: 10px
+					margin: 5px 4px
+					background: $white
+					//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+					border-radius: 0
+					border: 2px solid $white
+					display: block
+					//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: opacity 200ms ease
+
+				&.active span 
+					background-color: $color_primary
+					border: 2px solid $color_primary
+
+
+
+		.owl-nav 
+			line-height: 1.8
+			text-align: center
+			.owl-prev 
+				position: absolute
+				top: 50%
+				left: 0
+				color: $white
+				font-size: 20px
+				margin: 8px
+				padding: 0
+				background: transparent
+				border: 2px solid $white
+				display: inline-block
+				cursor: pointer
+				//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+				border-radius: 100%
+				height: 40px
+				width: 40px
+				&:hover 
+					background-color: transparent
+					text-decoration: none
+					color: $color_primary
+					border: 2px solid $color_primary
+
+
+			.owl-next 
+				position: absolute
+				top: 50%
+				right: 0
+				color: $white
+				font-size: 20px
+				margin: 8px
+				padding: 0
+				background: transparent
+				border: 2px solid $white
+				display: inline-block
+				cursor: pointer
+				//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+				border-radius: 100%
+				height: 40px
+				width: 40px
+				&:hover 
+					background-color: transparent
+					text-decoration: none
+					color: $color_primary
+					border: 2px solid $color_primary
+
+
+
+		.owl-carousel .owl-item img 
+			width: 100%
+
+
+
+.slider-img 
+	position: relative
+	width: 100%
+	img 
+		position: relative
+		z-index: -1
+
+
+.slider-captions 
+	position: absolute
+	bottom: 165px
+	width: 100%
+	color: $white
+	text-align: center
+
+.slider-title 
+	color: $white
+	font-size: 60px
+	font-weight: 600
+	line-height: 65px
+	text-transform: capitalize
+
+.slider-text 
+	color: $white
+
+.footer 
+	background-color: $color_woodsmoke_approx
+	padding-top: 80px
+	color: $color_gunsmoke_approx
+	font-weight: 600
+
+.footer-title 
+	margin-bottom: 40px
+	color: $white
+	letter-spacing: 0
+	font-size: 22px
+
+.footer-widget 
+	margin-bottom: 40px
+	ul 
+		margin-bottom: 25px
+		li 
+			line-height: 1
+			margin-bottom: 18px
+			a 
+				font-size: 13px
+				color: $color_gunsmoke_approx
+				text-transform: uppercase
+				letter-spacing: 1px
+				font-weight: 800
+				padding-left: 15px
+				&:hover 
+					color: $color_primary
+
+
+
+
+
+.info-widget 
+	margin-bottom: 20px
+	border-bottom: 1px solid $color_shark_approx
+	padding-bottom: 70px
+	position: relative
+	&:last-child 
+		border-bottom: 0
+
+
+.info-icon 
+	color: $color_primary
+
+.info-text 
+	position: absolute
+	top: 0
+	left: 30px
+
+.info-title 
+	color: $white
+	font-size: 12px
+	letter-spacing: 1px
+	text-transform: uppercase
+	margin-bottom: 2px
+
+.contact-widget 
+	border: 1px solid $color_gray_nurse_approx
+	padding: 30px
+	.info-title 
+		color: $color_log_cabin_approx
+
+	.info-widget 
+		border-bottom: 1px solid $color_gray_nurse_approx
+
+
+.contact-social 
+
+.tiny-footer 
+	background-color: $color_cod_gray_approx
+	padding-top: 14px
+	padding-bottom: 14px
+	text-align: center
+
+.mute-text 
+	font-size: 13px
+	color: $color_fuscous_gray_approx
+	text-align: center
+
+.copyrightlink 
+	color: $color_fuscous_gray_approx
+	&:hover 
+		color: $color_primary
+
+
+.property-thumbnail 
+	margin-bottom: 30px
+
+.property-content 
+	border: 1px solid $color_gray_nurse_approx
+	padding: 30px
+	//If you use compass, instead of the line below you could use + border-bottom-right-radius($radius)
+	border-bottom-right-radius: 3px
+	//If you use compass, instead of the line below you could use + border-bottom-left-radius($radius)
+	border-bottom-left-radius: 3px
+
+.property-price 
+	position: absolute
+	bottom: 240px
+	left: 44px
+	color: $white
+
+.property-meta 
+	border-top: 1px solid $color_gray_nurse_approx
+	padding-top: 20px
+	letter-spacing: 1px
+
+.meta-bed 
+	margin-right: 15px
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: 14px
+	font-weight: 700
+
+.meta-bath 
+	margin-right: 15px
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: 14px
+	font-weight: 700
+
+.meta-SQfeet 
+	margin-right: 15px
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: 14px
+	font-weight: 700
+
+.property-single-meta 
+	color: $white
+	margin-bottom: -10px
+
+.property-icon 
+	font-size: 40px
+	vertical-align: sub
+
+.profile-widget 
+	padding: 30px 40px
+	border: 1px solid $color_gray_nurse_approx
+	margin-bottom: 30px
+	background-color: $white
+
+.profile-img 
+	text-align: center
+	margin-bottom: 30px
+
+.property-single-sidebar 
+	margin-top: -290px
+
+.video-img 
+
+.video-btn 
+	position: absolute
+	bottom: 6%
+	left: 40%
+
+.video-text 
+	position: absolute
+	bottom: 0
+	left: 10%
+	color: $white
+
+.property-description 
+	margin-bottom: 50px
+
+.property-features 
+	margin-bottom: 50px
+	ul li 
+		@extend .extend_10
+
+
+.property-details 
+	margin-bottom: 50px
+
+.table 
+	> tbody > tr 
+		> td 
+			@extend .extend_9
+
+		> th 
+			@extend .extend_9
+
+
+	> tfoot > tr 
+		> td 
+			@extend .extend_9
+
+		> th 
+			@extend .extend_9
+
+
+	> thead > tr 
+		> td 
+			@extend .extend_9
+
+		> th 
+			@extend .extend_9
+
+
+
+.property-location 
+	margin-bottom: 50px
+
+.property-thumb-gallery 
+
+.owl-thumb-item 
+	background: transparent
+	border: none
+	margin-right: 10px
+	margin-top: 20px
+	padding: 0
+	&:active 
+
+
+.profile-pic 
+	margin-bottom: 50px
+
+.profile-description 
+	padding-top: 60px
+	margin-bottom: 50px
+
+.profile-meta 
+	color: $color_primary
+	font-size: 12px
+	letter-spacing: 1px
+	text-transform: uppercase
+	font-weight: 700
+	margin-bottom: 20px
+	display: block
+
+.counter-block 
+	border: 1px solid $color_gray_nurse_approx
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 3px
+	padding: 30px 40px
+	margin-bottom: 40px
+
+.counter-icon 
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 100%
+	width: 50px
+	height: 50px
+	padding: 11px 18px
+	display: inline-block
+	color: $white
+	vertical-align: top
+
+.counter-content 
+	display: inline-block
+	padding-left: 20px
+	padding-top: 10px
+
+.counter-small-text 
+	font-size: 14px
+	font-weight: 700
+	letter-spacing: .50px
+	text-transform: uppercase
+	color: $color_tapa_approx
+
+.list-icon 
+	background-color: $color_fuchsia_blue_approx
+	margin-top: 20px
+
+.user-icon 
+	background-color: $color_lima_approx
+	margin-top: 20px
+
+.happy-icon 
+	background-color: $color_royal_blue_approx
+	margin-top: 20px
+
+.caption-style-1 
+	list-style-type: none
+	margin: 0
+	padding: 0
+	img 
+		margin-bottom: 20px
+		padding: 0
+		float: left
+		z-index: 4
+
+	.caption 
+		cursor: pointer
+		position: absolute
+		opacity: 0
+		//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+		transition: all 0.45s ease-in-out
+
+	.blur 
+		background-color: $color_primary_approx_80
+		height: 231px
+		width: 262px
+		z-index: 5
+		position: absolute
+
+	.caption-text 
+		z-index: 10
+		color: $white
+		position: absolute
+		height: 231px
+		width: 262px
+		text-align: center
+		top: 100px
+		font-weight: 700
+
+	&:hover .caption 
+		opacity: 1
+
+
+.team-block 
+	margin-bottom: 30px
+
+.team-content 
+	text-align: center
+	margin-top: 30px
+
+.team-title 
+	margin-bottom: 2px
+	font-size: 18px
+
+.team-meta 
+	font-weight: 800
+	font-size: 12px
+	color: $color_primary
+	text-transform: uppercase
+	letter-spacing: 1px
+
+.style-1 
+	float: left
+	padding: 0
+	position: relative
+	overflow: hidden
+
+.appointment-form 
+	padding: 34px
+	border: 1px solid $color_gray_nurse_approx
+
+.appointment-form-title 
+	@extend .extend_11
+
+.contact-title 
+	@extend .extend_11
+
+.widget-carousel 
+	.owl-carousel 
+		.owl-nav 
+			display: none
+
+		.owl-item img 
+			width: inherit
+			display: inline
+
+
+	.owl-theme 
+		.owl-dots 
+			text-align: center !important
+			position: relative
+			.owl-dot 
+				display: inline-block
+				zoom: 1
+				span 
+					width: 10px
+					height: 10px
+					margin: 5px 4px
+					background: $color_gray_nurse_approx
+					//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+					border-radius: 0
+					border: 2px solid $color_gray_nurse_approx
+					display: block
+					//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: opacity 200ms ease
+
+				&.active span 
+					background-color: $color_primary
+					border: 2px solid $color_primary
+
+
+
+		.owl-carousel .owl-item img 
+			width: 100%
+
+
+
+.testimonial-block 
+	background-color: $white
+	padding: 40px
+	border: 1px solid $color_gray_nurse_approx
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 3px
+
+.testimonial-widget 
+	background-color: $color_desert_storm_approx
+	padding: 40px
+	text-align: center
+	margin-bottom: 30px
+
+.testimonial-content 
+	font-size: 21px
+	font-weight: 700
+	color: $color_log_cabin_approx
+	margin-bottom: 50px
+
+.testimonial-img 
+	display: inline-block
+	vertical-align: top
+	img 
+
+
+.star-rating 
+	margin-bottom: 20px
+	span 
+		font-size: 12px
+		color: $color_buttercup_approx
+
+
+.testimonial-user-block 
+
+.testimonial-meta 
+	font-style: normal
+	display: inline-block
+	text-align: left
+	padding-left: 14px
+
+.testimonial-title 
+	margin-bottom: 6px
+	font-size: 20px
+
+.testimonial-address-text 
+	font-size: 14px
+	color: $color_tapa_approx
+	margin-bottom: 5px
+
+.testimonials-carousel 
+	.owl-carousel 
+		.owl-nav 
+			display: none
+
+		.owl-item img 
+			width: inherit
+			display: inline
+
+
+	.owl-theme 
+		.owl-dots 
+			text-align: center !important
+			position: relative
+			bottom: -30px
+			.owl-dot 
+				display: inline-block
+				zoom: 1
+				span 
+					width: 10px
+					height: 10px
+					margin: 5px 4px
+					background: $color_gray_nurse_approx
+					//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+					border-radius: 0
+					border: 2px solid $color_gray_nurse_approx
+					display: block
+					//If you use compass, instead of the line below you could use + transition($transition-1, $transition-2, $transition-3, $transition-4, $transition-5, $transition-6, $transition-7, $transition-8, $transition-9, $transition-10)
+					transition: opacity 200ms ease
+
+				&.active span 
+					background-color: $color_primary
+					border: 2px solid $color_primary
+
+
+
+		.owl-carousel .owl-item img 
+			width: 100%
+
+
+
+.post-holder 
+	margin-bottom: 40px
+	border-bottom: 1px solid $color_gray_nurse_approx
+	padding-bottom: 60px
+	&:last-child 
+		border-bottom: 0
+
+
+.post-block 
+	margin-bottom: 40px
+
+.post-content 
+	border: 1px solid $color_gray_nurse_approx
+	//If you use compass, instead of the line below you could use + border-bottom-left-radius($radius)
+	border-bottom-left-radius: 3px
+	//If you use compass, instead of the line below you could use + border-bottom-right-radius($radius)
+	border-bottom-right-radius: 3px
+	padding: 40px
+
+.post-title 
+	margin-bottom: 30px
+
+.meta 
+	margin-bottom: 30px
+	font-weight: 800
+	line-height: 1
+	text-transform: uppercase
+	letter-spacing: 1px
+	font-size: 13px
+
+.meta-icon 
+
+.meta-admin 
+	@extend .extend_12
+
+.meta-comments 
+	@extend .extend_12
+
+.meta-categories 
+	@extend .extend_12
+
+.meta-date 
+	color: $color_mountain_mist_approx
+	margin-right: 10px
+
+.meta-author 
+
+.pagination 
+	display: inline-block
+	padding-left: 0
+	margin: 20px 0
+	> li > span 
+		@extend .extend_13
+
+
+.st-pagination 
+	margin-top: 30px
+	text-align: center
+	.pagination 
+		> li 
+			> a 
+				@extend .extend_13
+				&:focus 
+					@extend .extend_14
+
+				&:hover 
+					@extend .extend_14
+
+
+			> span 
+				&:focus 
+					@extend .extend_14
+
+				&:hover 
+					@extend .extend_14
+
+
+			&:first-child 
+				> a 
+					margin-left: 0
+					//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+					border-radius: 3px
+
+				> span 
+					margin-left: 0
+					//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+					border-radius: 3px
+
+
+			&:last-child 
+				> a 
+					//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+					border-radius: 3px
+
+				> span 
+					//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+					border-radius: 3px
+
+
+
+		> .active 
+			> a 
+				@extend .extend_15
+				&:focus 
+					@extend .extend_15
+
+				&:hover 
+					@extend .extend_15
+
+
+			> span 
+				@extend .extend_15
+				&:focus 
+					@extend .extend_15
+
+				&:hover 
+					@extend .extend_15
+
+
+
+
+
+.related-post-block 
+	border-top: 1px solid $color_gray_nurse_approx
+	margin-bottom: 20px
+	border-bottom: 1px solid $color_gray_nurse_approx
+	.meta-categories 
+		border-bottom: transparent
+
+
+.related-post-title 
+	margin-top: 30px
+
+.related-post 
+
+.related-post-content 
+
+.post-meta 
+	margin-left: 0
+	color: $color_mountain_mist_approx
+	font-size: 12px
+
+.post-navigation 
+	background-color: $color_black_haze_approx
+	padding: 40px
+
+.nav-links 
+	text-decoration: none
+
+.nav-previous 
+
+.prev-link 
+	color: $color_log_cabin_approx
+	float: left
+	padding-right: 32px
+	padding-top: 15px
+
+.next-link 
+	color: $color_log_cabin_approx
+	float: right
+	padding-left: 32px
+	padding-top: 15px
+
+.nav-next 
+
+.previous-next-title 
+	margin-bottom: 0
+
+.author-block 
+
+.author-post 
+
+.author-img 
+	float: left
+	padding-right: 30px
+
+.author-header 
+
+.author-title 
+	margin-bottom: 2px
+
+.author-content 
+
+.author-meta 
+	font-weight: 700
+	margin-bottom: 12px
+	font-size: 12px
+	color: $color_primary
+
+.comment-area 
+	margin-top: 40px
+	margin-bottom: 10px
+
+.comment-title 
+	font-size: 22px
+	line-height: 22px
+	margin-bottom: 30px
+
+.comment-list 
+	margin-bottom: 30px
+	border-bottom: 1px solid $color_gray_nurse_approx
+
+.comment 
+
+.comment-body 
+
+.comment-info 
+	padding-left: 100px
+	padding-bottom: 20px
+
+.user-title 
+	font-size: 18px
+	float: left
+	margin-bottom: 0
+	margin-right: 30px
+
+.comment-meta-date 
+	margin-bottom: 10px
+	color: $color_tapa_approx
+	font-size: 12px
+	font-weight: 800
+	letter-spacing: .75px
+	text-transform: uppercase
+	display: block
+
+.comment-content 
+	margin-bottom: 8px
+	font-size: 16px
+
+.reply-link 
+
+.childern 
+	background-color: transparent
+	padding-left: 100px
+
+.leave-comments 
+
+.widget 
+	margin-bottom: 30px
+	padding: 30px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 3px
+	border: 1px solid $color_gray_nurse_approx
+
+.widget-title 
+	color: $color_ebony_clay_approx
+	font-size: 18px
+	font-weight: 800
+	text-transform: uppercase
+	letter-spacing: 1px
+
+.recent-post 
+	margin-bottom: 30px
+	.meta-date 
+		border-bottom: transparent
+
+
+.recent-img 
+	float: right
+	padding-left: 5px
+	img 
+
+
+.recent-title 
+	line-height: 22px
+	font-size: 14px
+
+.widget-search 
+	button 
+		background-color: transparent
+		border: transparent
+		color: $color_gray_approx
+		font-size: 12px
+		right: 0
+		padding: 12px 20px
+		position: absolute
+		bottom: 0
+
+	.form-control 
+		height: 49px
+		margin-bottom: 0
+
+
+.search-form 
+	position: relative
+
+.box-info 
+	font-size: 16px
+	line-height: 1.6
+
+.circle-default-color 
+	background-color: $color_log_cabin_approx
+	height: 162px
+	width: 162px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 50%
+	border: 5px solid $color_storm_dust_approx
+
+.circle-primary-color 
+	background-color: $color_primary
+	height: 162px
+	width: 162px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 50%
+	border: 5px solid $color_sunglo_approx
+
+.circle-heading-color 
+	background-color: $color_log_cabin_approx
+	height: 162px
+	width: 162px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 50%
+	border: 5px solid $color_storm_dust_approx
+
+.circle-secondary-color 
+	background-color: $color_tapa_approx
+	height: 162px
+	width: 162px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 50%
+	border: 5px solid $color_star_dust_approx
+
+.box-bg-color 
+
+.box-table 
+	padding: 16px 30px
+	margin: 0 -15px 15px
+	border-color: 
+	border: 1px solid $color_alto_approx
+
+.key-features 
+
+.key-features-title 
+	font-size: 14px
+
+.error-wrapper 
+	background-color: $color_gray_nurse_approx
+	padding: 80px
+
+.error-head 
+	float: left
+	padding-right: 110px
+	padding-top: 30px
+
+.error-content 
+
+.error-title 
+	font-size: 130px
+	margin-bottom: 50px
+	font-weight: 900
+	color: $color_primary
+
+.error-text 
+	font-size: 60px
+	letter-spacing: 4px
+	text-transform: uppercase
+	font-weight: 900
+
+.error-img 
+	margin-bottom: -100px
+	margin-top: 100px
+
+#map 
+
+#contact-map 
+	width: 100%
+	min-height: 503px
+
+#property-map 
+	width: 100%
+	min-height: 350px
+
+@media only screen and(max-width:1440px) 
+	.slider-captions 
+		bottom: 53px
+
+
+@media only screen and(max-width:1200px) 
+	.page-section 
+		padding-top: 270px
+		padding-bottom: 40px
+
+	.page-breadcrumb 
+		color: $color_santas_gray_approx
+		position: absolute
+		top: 290px
+		left: 150px
+
+	.slider-captions 
+		bottom: 30px
+
+	.slider-title 
+		font-size: 28px
+		line-height: 32px
+
+	#navigation > ul > li > a 
+		padding: 16px 14px
+
+	.slider .owl-theme 
+		.owl-nav 
+
+		.owl-dots 
+			bottom: 35px
+
+
+
+@media only screen and(max-width:992px) 
+
+@media only screen and(max-width:768px) 
+	.navbar-fixed-top 
+		border-width: 0 0 1px
+		position: relative
+
+	.header-wrapper 
+		padding-bottom: 10px
+
+	.logo 
+		margin-top: 15px
+
+	.top-text 
+		color: $color_mine_shaft_approx
+
+	.navigation 
+		padding-top: 12px
+
+	.page-breadcrumb 
+		top: 89px
+
+	.slider-captions 
+		bottom: 60px
+		text-align: center
+
+	.slider-title 
+		font-size: 28px
+		line-height: 32px
+
+	.slider 
+		.owl-nav 
+
+		.owl-theme 
+			.owl-nav 
+				.owl-prev 
+					top: 30%
+
+				.owl-next 
+					top: 30%
+
+
+			.owl-dots 
+				bottom: 35px
+
+
+
+	.page-section 
+		padding-top: 70px
+		padding-bottom: 40px
+
+	.page-title 
+		font-size: 26px
+
+	.space-medium 
+		padding-top: 45px
+		padding-bottom: 40px
+
+	.content 
+		padding-top: 45px
+		padding-bottom: 40px
+
+	.counter-content 
+		padding-left: 0
+
+	.property-price 
+		bottom: 248px
+
+	.property-thumb-gallery 
+		margin-top: 70px
+
+	.property-single-sidebar 
+		margin-top: 70px
+
+	.video-btn 
+		position: absolute
+		bottom: 3%
+
+	.video-text 
+		font-size: 12px
+
+	.error-img 
+		margin-bottom: -40px
+
+	.profile-pic 
+		margin-bottom: 0
+
+	.top-bar ul 
+		padding-left: 20px
+
+	.widget-carousel .property-price 
+		bottom: 249px
+
+
+@media only screen and(max-width:480px) 
+	.navbar-fixed-top 
+		border-width: 0 0 1px
+		position: relative
+
+	.top-bar 
+		padding-top: 0
+		padding-bottom: 0
+
+	.header-wrapper 
+		padding-bottom: 10px
+
+	.slider-captions 
+		bottom: 18px
+		background: transparent
+		left: 0
+
+	.slider-title 
+		font-size: 21px
+		line-height: 26px
+
+	.page-section 
+		padding-bottom: 30px
+		padding-top: 25px
+		p 
+			margin-bottom: 0
+
+
+	.page-title 
+		font-size: 24px
+
+	.space-medium 
+		padding-top: 35px
+		padding-bottom: 30px
+
+	.content 
+		padding-top: 35px
+		padding-bottom: 30px
+
+	.property-price 
+		bottom: 250px
+
+	.counter-content 
+		padding-left: 0
+
+	.property-single-sidebar 
+		margin-top: 0
+
+	.property-thumb-gallery 
+		margin-top: 70px
+
+	.property-single-meta 
+		margin-bottom: 0
+
+	.prev-link 
+		float: left
+		padding-right: 24px
+
+	.next-link 
+		float: right
+		padding-left: 22px
+		adding-top: 15px
+
+	.nav-previous 
+		margin-bottom: 20px
+
+	.author-img 
+		padding-right: 50px
+
+	.error-wrapper 
+		background-color: $color_gray_nurse_approx
+		padding: 28px
+
+	.error-img 
+		margin-bottom: -30px
+		margin-top: 30px
+
+	.nopr 
+		padding-right: 15px
+
+	.nopl 
+		padding-left: 15px
+
+	.meta-bed 
+		margin-right: 100px
+
+	.meta-bath 
+		margin-right: 100px
+
+	.error-head 
+		padding-right: 0
+
+	.profile-pic 
+		margin-bottom: 0
+
+	.slider .owl-theme 
+		.owl-nav 
+			display: none
+
+		.owl-dots 
+			bottom: 24px
+
+
+	.widget-carousel .property-price 
+		bottom: 275px
+
+
+@media only screen and(max-width:320px) 
+	.navbar-fixed-top 
+		border-width: 0 0 1px
+		position: relative
+
+	.top-bar 
+		padding-top: 0
+		padding-bottom: 0
+
+	.header-wrapper 
+		padding-bottom: 10px
+
+	.slider-captions 
+		bottom: 18px
+		background: transparent
+		left: 0
+
+	.slider-title 
+		font-size: 21px
+		line-height: 26px
+
+	.page-section 
+		padding-bottom: 25px
+		padding-top: 25px
+		p 
+			margin-bottom: 0
+
+
+	.page-title 
+		font-size: 24px
+
+	.space-medium 
+		padding-top: 35px
+		padding-bottom: 30px
+
+	.content 
+		padding-top: 35px
+		padding-bottom: 30px
+
+	.property-price 
+		bottom: 322px
+
+	.counter-content 
+		padding-left: 0
+
+	.property-single-sidebar 
+		margin-top: 0
+
+	.property-thumb-gallery 
+		margin-top: 70px
+
+	.property-single-meta 
+		margin-bottom: 0
+
+	.prev-link 
+		float: left
+		padding-right: 24px
+
+	.next-link 
+		float: right
+		padding-left: 22px
+		adding-top: 15px
+
+	.nav-previous 
+		margin-bottom: 20px
+
+	.author-img 
+		padding-right: 50px
+
+	.error-wrapper 
+		background-color: $color_gray_nurse_approx
+		padding: 28px
+
+	.error-img 
+		margin-bottom: -30px
+		margin-top: 30px
+
+	.nopr 
+		padding-right: 15px
+
+	.nopl 
+		padding-left: 15px
+
+	.meta-bed 
+		margin-right: 33px
+
+	.meta-bath 
+		margin-right: 33px
+
+	.error-head 
+		padding-right: 0
+
+	.profile-pic 
+		margin-bottom: 0
+
+	.slider .owl-theme 
+		.owl-nav 
+			display: none
+
+		.owl-dots 
+			bottom: 24px
+
+
+	.widget-carousel .property-price 
+		bottom: 275px
+
+
+.textarea.form-control 
+
+.has-success .form-control 
+	border-color: $color_killarney_approx
+	background-color: $color_peppermint_approx
+	//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 1px 1px $black_7_5
+
+.has-error .form-control 
+	border-color: $color_apple_blossom_approx
+	background-color: $color_pot_pourri_approx
+	//If you use compass, instead of the line below you could use + box-shadow($shadow-1, $shadow-2, $shadow-3, $shadow-4, $shadow-5, $shadow-6, $shadow-7, $shadow-8, $shadow-9, $shadow-10)
+	box-shadow: inset 0 1px 1px $black_7_5
+
+div.aligncenter 
+	display: block
+	margin: 5px auto 5px auto
+
+button.btn 
+	margin-right: -1px
+
+.arrow-right li:before 
+	font-family: $font_2
+	display: inline-block
+	position: absolute
+	left: 0
+	font-size: 14px
+	color: $color_primary
+	content: '\f105'
+
+.angle-right li:before 
+	font-family: $font_2
+	display: inline-block
+	position: absolute
+	left: 0
+	font-size: 14px
+	color: $color_primary
+	content: '\f10c'
+
+.map-pin li:before 
+	font-family: $font_2
+	display: inline-block
+	position: absolute
+	left: 0
+	font-size: 14px
+	color: $color_primary
+	content: '\f041'
+
+.breadcrumb > li 
+	> a 
+		color: $white
+
+	+ li:before 
+		padding: 0 5px
+		color: $color_pumice_approx
+		content: "/\00a0"
+
+
+.owl-theme .owl-dots .owl-dot:hover span 
+	background-color: $color_primary
+	border: 2px solid $color_primary
+	background-color: $color_primary
+	border: 2px solid $color_primary
+	background-color: $color_primary
+	border: 2px solid $color_primary
+
+.property-img img 
+	//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+	border-top-left-radius: 3px
+	//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+	border-top-right-radius: 3px
+	width: 100%
+
+.profile-content .info-widget 
+	padding-bottom: 30px
+	position: relative
+	border-bottom: 0
+
+.team-img img 
+	width: 100%
+
+.team-area ul li 
+	@extend .extend_10
+
+.post-img img 
+	//If you use compass, instead of the line below you could use + border-top-left-radius($radius)
+	border-top-left-radius: 3px
+	//If you use compass, instead of the line below you could use + border-top-right-radius($radius)
+	border-top-right-radius: 3px
+
+.related-img img 
+	margin-bottom: 30px
+
+.comment-header h5 
+	margin-bottom: 4px
+
+.comment-author img 
+	float: left
+
+.widget-categories ul li 
+	position: relative
+	margin-bottom: 8px
+	a 
+		font-size: 15px
+		font-weight: 700
+		color: $color_tapa_approx
+		padding-left: 15px
+		display: block
+		letter-spacing: 1px
+		text-transform: uppercase
+		&:hover 
+			color: $color_primary
+
+
+
+.widget-archives ul li a:hover 
+
+.widget-tags a 
+	color: $white
+	padding: 6px 10px
+	background-color: $color_gray_approx
+	display: inline-block
+	margin-bottom: 5px
+	//If you use compass, instead of the line below you could use + border-radius($radius, $vertical-radius)
+	border-radius: 3px
+	font-size: 12px
+	font-weight: 900
+	text-transform: uppercase
+	letter-spacing: 1px
+	line-height: 20px
+	margin-right: 5px
+	border: 0
+	&:hover 
+		background-color: $color_primary
+		color: $white
+		border: 0
+
+
+.unordered ul 
+	list-style: none
+	padding-left: 22px
+
+.ordered ol 
+	list-style: decimal
+	margin-left: 20px
+	li 
+		line-height: 2
+
+
+.altenate ul 
+	list-style: none
+	li 
+		border-bottom: 1px solid $color_bon_jour_approx
+		line-height: 2.5
+
+
+.loader 
+  position: fixed
+  background: $seashell
+  width: 100%
+  height: 100vh
+  z-index: 9999
+  div
+    position: absolute
+    top: 0
+    bottom: 0
+    left: 0
+    right: 0
+    margin: auto
+    height: 200px
+    width: 200px
+
